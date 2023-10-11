@@ -38,6 +38,12 @@
                         intricate in our daily lives, and it is important that people who use them always have the best possible experience, 
                         which is why I dedicated final thesis to the study of interface communicability.
                     </p>
+                    <p *ngIf="this.english == 0">
+                        Hoje moro em Curitiba, e trabalho no Grupo de Tecnologia do Núcleo de Concursos da Universidade Federal do Paraná.
+                    </p>
+                    <p *ngIf="this.english == 1">
+                        Today I live in Curitiba, and work in the Technology Group of Núcleo de Concursos at the Federal University of Paraná.
+                    </p>
                 </div>
             </li>
             <li>
@@ -88,6 +94,14 @@
                 <div class="collapsible-header" *ngIf="this.english == 0">Experiência</div>
                 <div class="collapsible-header" *ngIf="this.english == 1">Experience</div>
                 <div class="collapsible-body">
+                    <li *ngIf="this.english == 0">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Experiência desenvolvendo aplicações web com Java, Spring Boot, Angular e Oracle, no Grupo de Tecnologia do Núcleo de Concursos da Universidade Federal do Paraná.
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Experience developing web applications with Java, Spring Boot, Angular and Oracle, in the Technology Group of Núcleo de Concursos at the Federal University of Paraná.
+                    </li>
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Experiência trabalhando em equipe SCRUM, atuando como SCRUM Master em 2 sprints, desenvolvendo aplicação web em Angular, Spring Boot
@@ -190,6 +204,10 @@
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Mongo DB
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Oracle
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
